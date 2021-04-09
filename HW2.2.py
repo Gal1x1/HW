@@ -7,4 +7,3 @@ el = input('Insert elements - ').split()
 for x in range(1, len(el), 2):
     el.insert(x - 1, el.pop(x))
 print(el)
-

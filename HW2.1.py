@@ -9,4 +9,4 @@ decimal = float(input("Insert decimal - "))
 ls = [text, integer, decimal]
 print (ls)
 for x in ls:
-    print(f"{x} - {type(x)}")
+    print(f"{x} - {type(x)}" )

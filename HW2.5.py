@@ -10,8 +10,5 @@
 
 el = int(input("Insert value - "))
 rating = [7, 5, 3, 3, 2]
-for x in rating:
-    if el <= x
-
-rating.insert(2, el):
+rating.insert()
 print(sorted(rating))

@@ -7,3 +7,17 @@ el = input('Insert elements - ').split()
 for x in range(1, len(el), 2):
     el.insert(x - 1, el.pop(x))
 print(el)
+# EV
+# a = input('Insert elements - ').split()
+# i = 0
+# print(f'original list {a}')
+# while i + 1 < len(a):
+# if i % 2 == 0:
+# a.insert(i, a.pop(i+1))
+# i += 1
+# print(f'changed list {a}')
+#
+# listx = list(input('Insert elements - '))
+# for i in range(1, len(listx, 2):
+#     listx[i - 1], listx[i] = listx[i], list[i - 1]
+#     print(listx)

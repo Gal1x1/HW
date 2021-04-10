@@ -8,7 +8,16 @@
 # Пользователь ввел число 1. Результат: 7, 5, 3, 3, 2, 1.
 # Набор натуральных чисел можно задать непосредственно в коде, например, my_list = [7, 5, 3, 3, 2].
 
-el = int(input("Insert value - "))
-rating = [7, 5, 3, 3, 2]
-rating.insert()
-print(sorted(rating))
+# el = int(input("Insert value - "))
+# rating = [7, 5, 3, 3, 2]
+# rating.insert()
+# print(sorted(rating))
+
+list = [7, 5, 3, 3, 2]
+new_number = int(input('Insert new element -'))
+i = 0
+for n in list:
+    if new_number <= n:
+        i  += 1
+list.insert(i, float(new_number))
+print(list)

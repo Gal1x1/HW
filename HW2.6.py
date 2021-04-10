@@ -22,6 +22,23 @@
 # “ед”: [“шт.”]
 # }
 
-dict = {"key_1": 500, 2: 400, "key_3": True, 4: None}
-# keys
-print(dict.keys())
+features = {'name': '', 'price': '', 'quantity': '', 'measuring units': ''}
+analytics = {'name': [], 'price': [], 'quantity': [], 'measuring units': []}
+num = 0
+
+while True:
+    if input('Type q to exit, Enter to continue').upper() == 'Q':
+        break
+    num += 1
+    for f in features.keys():
+        prop = input(f'Insert the value feature {f} - ')
+        features[f] = int(prop) if (f == 'price' or f == 'quantity') else prop
+        analytics[f].append(features[f])
+    good.append((num,features.copy()))
+    print(f"\nGoods' structure \n{goods}")
+    print(f"\nCurrent goods' analytics\n{'*' * 30}")
+    for key, value in analytics.item():
+        print(f"{key[:25]:>30}: {value}")
+    print('*' * 30)
+
+# почему пишет ошибку name 'good' is not defined???

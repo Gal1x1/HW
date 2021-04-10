@@ -20,4 +20,4 @@ for n in list:
     if new_number <= n:
         i  += 1
 list.insert(i, float(new_number))
-print(list)
+print(list )

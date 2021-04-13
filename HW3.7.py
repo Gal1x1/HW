@@ -4,9 +4,12 @@
 # Сделать вывод исходной строки, но каждое слово должно начинаться с заглавной буквы.
 # Необходимо использовать написанную ранее функцию int_func().
 
-def ext_func(var_1):
- def int_func(var_2):
-  return var_1 + var_2
-return int_func
-f_obj = ext_func(200) # f_obj - функция
-print(f_obj(300))
+def int_func(a):
+    return str.title(a)
+print(int_func(a = input('Insert lowercase text -> ')))
+
+b = input('Insert another lowercase text -> ').split()
+print(str.title(' '.join(b)))
+from dill.source import getsource
+print(getsource(int_func(a)))
+

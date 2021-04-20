@@ -1,11 +1,30 @@
 # Программа принимает действительное положительное число x и целое отрицательное число y.
 # Необходимо выполнить возведение числа x в степень y.
 # Задание необходимо реализовать в виде функции my_func(x, y).
-# При решении задания необходимо обойтись без встроенной функции возведения числа в степень.
+# При решении задания необходимо обойтись без встроенной функции возведения числа в степень.// bez pow
 # Подсказка: попробуйте решить задачу двумя способами.
 # Первый — возведение в степень с помощью оператора **.
 # Второй — более сложная реализация без оператора **, предусматривающая использование цикла.
-# nedodelano
-def my_func(x, y)
-    pow(x, y)
-    print(my_func(input("Insert 1.arg: "), input("Insert 2.arg: "))
+
+#FIRST
+# def my_func(x, y):
+#     return x ** y
+# print(my_func(int(input("Insert 1.arg: ")), int(input("Insert 2.arg: "))))
+
+#SECOND
+# def my_func(x, y):
+#     return 1 if y == 0 else my_func(x, y + 1) * 1 / x
+# print(my_func(input("Insert 1.arg: "), input("Insert 2.arg: ")))
+#
+
+
+# ___________________
+# def my_func(x, y):
+#     if y == 0:
+#         x == 1
+#         print(my_func())
+#     else:
+#         while y > 0:
+#         y -= 1
+#         x *= x
+# print(my_func(int(input("Insert 1.arg: ")), int(input("Insert 2.arg: "))))

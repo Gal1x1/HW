@@ -8,4 +8,3 @@ def divide(a, b):
     return a / b
 print(divide(int(input("Insert 1.arg: ")), int(input("Insert 2.arg: "))))
 
-
